@@ -30,7 +30,8 @@ exports.resetPasswordToken = async (req, res) => {
 
 
         // create url
-        const url = `https://study-notion-mern-stack.netlify.app/update-password/${token}`;
+        const url = `https://edu-glow.vercel.a
+        pp/forgot-password/${token}`;
 
         // send email containing url
         await mailSender(email, 'Password Reset Link', `Password Reset Link : ${url}`);
